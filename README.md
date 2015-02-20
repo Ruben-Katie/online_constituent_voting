@@ -6,6 +6,9 @@ Build the ERD Diagram
 
 Make it so that the staff person can:
 
-* log in
-* create constituents
 * create bills
+* mark past bills with voting results of the congressperson
+
+Any website visitor can:
+
+* see the voting results
