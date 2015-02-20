@@ -13,4 +13,8 @@ class BillTest < ActiveSupport::TestCase
     assert_equal "Yes", bills(:two).yes_no
     assert_equal "No", bills(:one).yes_no
   end
+
+  test "" do
+
+  end
 end
