@@ -7,17 +7,14 @@
 
 <p>
   <strong>Status:</strong>
-  <%= @bill.status %>
+  <%= @bill.timeframe %>
 </p>
 
-<p>
-  <strong>Staff:</strong>
-  <%= @bill.staff_id %>
-</p>
+
 
 <p>
-  <strong>Real vote:</strong>
-  <%= @bill.real_vote %>
+  <strong>Congressperson's vote:</strong>
+  <%= @bill.yes_no %>
 </p>
 
 <%= link_to 'Edit', edit_bill_path(@bill) %> |
