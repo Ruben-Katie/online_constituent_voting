@@ -11,3 +11,15 @@ two:
   status: true
   staff_id: 1
   real_vote: true
+
+three:
+  name: Free Donuts
+  status: true
+  staff_id: 1
+  real_vote: false
+
+four:
+  name: Permanent 3-Day Weekends
+  status: false
+  staff_id: 1
+  real_vote: true
