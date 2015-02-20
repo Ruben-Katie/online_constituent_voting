@@ -9,8 +9,12 @@
   <strong>Status:</strong>
   <%= @bill.timeframe %>
 </p>
-
-
+<p>
+  <strong>Constituent votes:</strong>
+</p>
+  <% @bill.votes.each do |f| %>
+<p><%= f.yes_no %></p>
+<% end %>
 
 <p>
   <strong>Congressperson's vote:</strong>

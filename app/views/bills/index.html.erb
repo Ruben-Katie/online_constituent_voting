@@ -15,10 +15,10 @@
   <tbody>
     <% @bills.each do |bill| %>
       <tr>
-        <td><%= bill.name %></td>
+        <td><%= link_to bill.name, bill_path(bill.id)  %></td>
         <td><%= bill.timeframe %></td>
-        <td><%= bill.yes_no%></td>
-        <td><%= link_to 'Show', bill %></td>
+        <td><%= bill.yes_no %></td>
+
         <td><%= link_to 'Edit', edit_bill_path(bill) %></td>
         <td><%= link_to 'Destroy', bill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

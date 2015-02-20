@@ -1,4 +1,7 @@
 class Bill < ActiveRecord::Base
+  has_many :votes
+
+  validates :name, presence: true
   def timeframe
     status ? "Upcoming" : "Past"
   end
