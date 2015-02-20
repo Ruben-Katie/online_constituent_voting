@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: No HW
   status: false
   staff_id: 1
   real_vote: false
 
 two:
-  name: MyString
-  status: false
+  name: No work
+  status: true
   staff_id: 1
-  real_vote: false
+  real_vote: true
