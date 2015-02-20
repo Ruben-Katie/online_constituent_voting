@@ -16,8 +16,7 @@
     <%= f.number_field :constituent_id %>
   </div>
   <div class="field">
-    <%= f.label :bill_id %><br>
-    <%= f.collection_select :bill_id, Bill.all, :id, :name, {:include_blank => ""} %>
+    <%= f.hidden_field :bill_id %>
   </div>
   <div class="field">
     <%= f.label "Check here to vote Yes, Leave blank for No." %><br>

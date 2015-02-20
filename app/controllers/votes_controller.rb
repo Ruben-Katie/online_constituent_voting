@@ -15,6 +15,7 @@ class VotesController < ApplicationController
   # GET /votes/new
   def new
     @vote = Vote.new
+    @vote.bill = Bill.find(params[:bill_id])
   end
 
   # GET /votes/1/edit

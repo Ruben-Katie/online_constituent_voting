@@ -9,12 +9,20 @@
   <strong>Status:</strong>
   <%= @bill.timeframe %>
 </p>
+
+<%= link_to 'New Vote', new_vote_path(bill_id: @bill.id) %>
+
 <p>
   <strong>Constituent votes:</strong>
 </p>
   <% @bill.votes.each do |f| %>
 <p><%= f.yes_no %></p>
 <% end %>
+
+<p>
+  <strong>The most popular Constituent choice:</strong>
+  <%= @bill.popular_vote %>
+</p>
 
 <p>
   <strong>Congressperson's vote:</strong>
