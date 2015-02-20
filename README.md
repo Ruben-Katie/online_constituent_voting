@@ -11,4 +11,12 @@ Make it so that the staff person can:
 
 Any website visitor can:
 
-* see the voting results
+* see the voting results of the congressperson by each bill
+
+--some of our tests ended up happening with Scaffold magic, so we wrote two to test our methods for converting the booleans in Bills
+
+--got things pushed up to Heroku
+
+#THIRD STEP
+
+Any website visitor can vote on a bill.  All votes are displayed underneath each bill.
