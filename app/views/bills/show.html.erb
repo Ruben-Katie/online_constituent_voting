@@ -20,7 +20,7 @@
 
 <table>
 <tbody>
-  <% @bill.votes.each do |vote| %>
+  <% @votes.each do |vote| %>
   <tr>
     <td><%= vote.yes_no %></td>
     <td><%= link_to 'Edit', edit_vote_path(vote) %></td>

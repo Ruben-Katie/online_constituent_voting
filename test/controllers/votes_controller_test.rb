@@ -12,7 +12,7 @@ class VotesControllerTest < ActionController::TestCase
   end
 
   test "should get new" do
-    get :new
+    get :new, {:bill_id => bills(:one).id}
     assert_response :success
   end
 
@@ -25,8 +25,10 @@ class VotesControllerTest < ActionController::TestCase
   end
 
   test "should show vote" do
+
     get :show, id: @vote
     assert_response :success
+    # assert_equal 980190962, @vote.id
   end
 
   test "should get edit" do
