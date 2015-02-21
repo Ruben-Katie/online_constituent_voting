@@ -10,7 +10,7 @@
   <%= @bill.timeframe %>
 </p>
 
-<%= link_to 'New Vote', new_vote_path(bill_id: @bill.id) %>
+<%= link_to 'New Vote', new_vote_path(bill_id: @bill.id) if @bill.status %>
 
 <p>
   <strong>Constituent votes:</strong>

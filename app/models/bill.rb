@@ -7,7 +7,11 @@ class Bill < ActiveRecord::Base
   end
 
   def yes_no
-    real_vote ? "Yes" : "No"
+    if status
+      return " "
+    else
+      real_vote ? "Yes" : "No"
+    end
   end
 
   def popular_vote
