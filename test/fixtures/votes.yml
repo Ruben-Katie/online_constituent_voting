@@ -3,9 +3,9 @@
 one:
   constituent_id: 1
   bill_id: 1
-  response: false
+  response: true
 
 two:
   constituent_id: 1
   bill_id: 1
-  response: false
+  response: true

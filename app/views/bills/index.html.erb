@@ -15,7 +15,7 @@
   <tbody>
     <% @bills.each do |bill| %>
       <tr>
-        <td><%= link_to bill.name, bill_path(bill.id)  %></td>
+        <td><%= link_to bill.name, bill_path(bill.id) %></td>
         <td><%= bill.timeframe %></td>
         <td><%= bill.yes_no %></td>
 

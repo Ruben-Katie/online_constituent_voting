@@ -46,4 +46,9 @@ class BillsControllerTest < ActionController::TestCase
 
     assert_redirected_to bills_path
   end
+
+  # test "should display button at correct time" do
+  #   get :show, bills(:one).id
+  #   assert_select("p.voting_button")
+  # end
 end

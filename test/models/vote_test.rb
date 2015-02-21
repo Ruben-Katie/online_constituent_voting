@@ -10,4 +10,6 @@ class VoteTest < ActiveSupport::TestCase
       Vote.create(constituent_id: 1, bill_id: 1, response: true)
     end
   end
+  
+
 end
