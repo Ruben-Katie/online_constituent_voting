@@ -15,9 +15,24 @@
 <p>
   <strong>Constituent votes:</strong>
 </p>
-  <% @bill.votes.each do |f| %>
-<p><%= f.yes_no %></p>
-<% end %>
+
+<table>
+<tbody>
+  <% @bill.votes.each do |vote| %>
+  <tr>
+    <td><%= vote.yes_no %></td>
+    <td><%= link_to 'Edit', edit_vote_path(vote) %></td>
+    <td><%= link_to 'Destroy', vote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <% end %>
+</tbody>
+</table>
+
+
+
+
+
+
 
 <p>
   <strong>The most popular Constituent choice:</strong>

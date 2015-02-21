@@ -23,7 +23,7 @@ class VotesControllerTest < ActionController::TestCase
 
     assert_redirected_to vote_path(assigns(:vote))
   end
-
+  
   test "should show vote" do
     get :show, id: @vote
     assert_response :success

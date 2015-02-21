@@ -20,3 +20,5 @@ Any website visitor can:
 #THIRD STEP
 
 Any website visitor can vote on a bill.  All votes are displayed underneath each bill.
+
+--we cannot, for the life of us, figure out how to test the hidden field params when creating a new vote.  The controller test you suggested has been scaffolded for us!  So, moving on.
