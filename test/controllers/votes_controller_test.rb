@@ -28,7 +28,6 @@ class VotesControllerTest < ActionController::TestCase
 
     get :show, id: @vote
     assert_response :success
-    # assert_equal 980190962, @vote.id
   end
 
   test "should get edit" do
